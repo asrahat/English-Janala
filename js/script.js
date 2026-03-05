@@ -178,7 +178,7 @@ document.getElementById('search-btn').addEventListener('click',()=>{
     removeActive()
     const searchInput = document.getElementById('search-input');
     const searchValue = searchInput.value.trim().toLowerCase();
-    // searchInput.value = ""
+    searchInput.value = "";
     console.log(searchValue);
     fetch('https://openapi.programming-hero.com/api/words/all')
     .then(res=>res.json())
